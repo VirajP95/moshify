@@ -6,6 +6,12 @@
   --color-secondary: #00d9ff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Typography*/
 html {
   font-size: 62.5%;
@@ -117,7 +123,7 @@ a {
   }
 }
 
-/*List */
+/*Lists */
 
 .list {
   list-style: none;
@@ -144,4 +150,72 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+
+/* Buttons */
+
+.button {
+  border-radius: 40px;
+  border: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 1rem 0;
+}
+
+.button--primary {
+  color: white;
+  background: var(--color-primary);
+}
+
+.button--secondary {
+  color: white;
+  background: var(--color-secondary);
+}
+
+.button--ascent {
+  color: white;
+  background-color: var(--color-accent);
+}
+
+.button--ascent:hover {
+  background-color: #ec3000;
+}
+
+.button--primary:hover {
+  background-color: #3a8ffd;
+  color: white;
+}
+
+.button--secondary:hover {
+  background-color: #00c8eb;
+}
+
+.button--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+.button--outline {
+  background-color: white;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.button--outline:hover {
+  background-color: #1b0760;
+  color: white;
 }
