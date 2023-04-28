@@ -344,3 +344,22 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/*Media */
+
+.media {
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__image {
+  width: 5vw;
+  padding-top: 0.5rem;
+}
+
+.media__body {
+  margin: 0.2rem;
+}
