@@ -170,7 +170,7 @@ a {
   border: 0;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
@@ -259,7 +259,8 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 4rem;
+  width: 0;
 }
 
 .input-group .button {
@@ -712,8 +713,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -752,6 +754,10 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+
+  .block-plans .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
